@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+:root{
+    --background: rgb(22, 21, 21);
+    --secondaryBackground: #b692af;
+    --color1: #785589;
+    --text: #bb8a89;
+    --color2: #ac7b7d;
+}
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:120px;
+    margin:120px auto 0 auto;
+    max-width: 500px;
+}
+.stats-container{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--color1);
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.details{
+    width: 100%;
+}
+#progressBar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#progress{
+    width: 80%;
+    height: 10px;
+    background-color: #442d40;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+input{
+    flex: 1;
+    padding: 16px;
+    background: var(--Background);
+    border: 1px solid var(--color1);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+}
+button{
+    width: 50px;
+height: 50px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--color1);
+color: var(--text);
+font-size: 30px;
+font-weight: bold;
+outline: none;
+}
